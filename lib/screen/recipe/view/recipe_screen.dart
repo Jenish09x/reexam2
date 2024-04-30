@@ -12,22 +12,20 @@ class RecipeScreen extends StatefulWidget {
 }
 
 class _RecipeScreenState extends State<RecipeScreen> {
-  // RecipeModel? model =Get.arguments;
+  RecipeModel? model =Get.arguments;
   TextEditingController txtRecipe = TextEditingController();
   TextEditingController txtPrice = TextEditingController();
   TextEditingController txtQty = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
-  @override
-  void initState() {
-    super.initState();
-    // txtRecipe = TextEditingController(text: model!.recipe);
-    // txtQty = TextEditingController(text: model!.quantity);
-    // txtPrice = TextEditingController(text: model!.price);
-  }
 
   @override
   Widget build(BuildContext context) {
+    if(model!=null){
+      txtRecipe = TextEditingController(text: model!.recipe);
+      txtQty = TextEditingController(text: model!.quantity);
+      txtPrice = TextEditingController(text: model!.price);
+    }
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
