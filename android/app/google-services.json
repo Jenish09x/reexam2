@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474328645943",
+    "project_id": "reexam2-c4cd3",
+    "storage_bucket": "reexam2-c4cd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474328645943:android:ef547676467f2823969ab2",
+        "android_client_info": {
+          "package_name": "com.example.reexam2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC92lhVA8MWdpcve88l6ksH8GsTpXtlt38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
